@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Template</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            page-break-after: always;
+            background: linear-gradient(to bottom, #FCE09B, #B5CB99);
+        }
+
+        .cv-container {
+            max-width: 700px;
+            padding: 50px;
+            border: 1px solid #000000;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            text-align: center;
+            transition: 0.5s;
+            background-color: #ffffff;
+        }
+        .cv-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 0px;
+            transition: 0.5s;
+            color: #000000;
+            text-shadow: 2px 3px 4px #00000075;
+        }
+
+        .cv-photo {
+            width: 210px; 
+            height: 210px; 
+            border-radius: 50%;
+            box-shadow: 8px 8px 8px rgba(10, 10, 10, 0.329);
+            object-fit: cover;
+            object-position: center;
+            align-self: center;
+            margin-top: 10px;
+            transition: 0.6s;
+        }
+
+        .cv-info {
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: justify;
+            transition: 0.5s;
+        }
+
+        .cv-info p {
+            margin: 5px 0;
+        }
+
+        .cv-table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+            opacity: 0.7;
+            transition: 0.5s;
+           
+        }
+
+        .cv-table th, .cv-table td {
+            border: 1px solid #000000;
+            padding: 15px;
+            text-align: left;
+            transition: 0.5s;
+        }   
+
+        .cv-photo:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .cv-table:hover {
+            transform: scale(1.02);
+            opacity: 1;
+            background-color: #FCE09B;
+            transition: 0.5s;
+        }
+
+        .cv-info:hover {
+            color: #d62323;
+            transition: 0.2s;
+        }
+
+
+        .cv-title:hover {
+            color: #d81818;
+            transition: 0.2s;
+
+        }
+        .cv-container:hover {
+            background-color: #ffffff;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <img src="foto cv.jpg" alt="Foto Anda" class="cv-photo">
+        <br>
+        <br>
+        <div class="cv-title">Curriculum Vitae</div>
+        <br>
+        <div class="cv-info">
+            <p>Nama :&ensp;Muhammad Adam Zaidan</p>
+            <p>Alamat :&ensp;Jl. Kemuning 1, Blok F21</p>
+            <p>TTL :&ensp;Jakarta, 27 Februari 2003</p>
+            <p>Umur :&ensp;20 Tahun</p>
+            <p>Hobi :&ensp;Bermain Game, Bermain Futsal</p>
+            <p>Pendidikan :&ensp;S1 Sistem Informasi, Telkom University</p>
+        </div>
+        <hr>
+        <div class="cv-info">
+            <p>Nomor Telefon: 085215461887</p>
+        </div>
+        <hr>
+        <table class="cv-table">
+            <thead>
+                <tr>
+                    <th>Kelebihan</th>
+                    <th>Kekurangan</th>
+                    <th>Kemampuan</th>
+                    <th>Kompetensi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Detail-oriented</td>
+                    <td>Procrastinator</td>
+                    <td>Programming</td>
+                    <td>Problem-solving</td>
+                </tr>
+                <tr>
+                    <td>Team player</td>
+                    <td>Deadliner</td>
+                    <td>Web development</td>
+                    <td>Communication</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
