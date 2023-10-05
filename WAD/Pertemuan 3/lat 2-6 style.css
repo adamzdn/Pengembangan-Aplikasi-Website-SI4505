@@ -1,0 +1,25 @@
+body{
+    background-color: #000000;
+    background-image: url(satoru.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: rgb(235, 255, 213);
+    text-align: center;
+    text-transform:capitalize;
+    background-color: rgb(10, 34, 54);
+}
+
+h2{
+    color: rgb(228, 251, 189);
+    text-align: center;
+    text-decoration :overline;
+    background-color: #000000;
+}
+
+p{
+    color: rgb(186, 188, 190);
+    text-align: justify;
+    background-color: rgb(10, 34, 54);
+}
