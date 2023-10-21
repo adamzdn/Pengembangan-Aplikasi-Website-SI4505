@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validasi Input Angka</title>
+    <script>
+        function validateInput() {
+            // Get the input element
+            var numberInput = document.getElementById("numberInput");
+
+            // Get the value and convert it to a number
+            var inputValue = parseFloat(numberInput.value);
+
+            // Check if the value is between 1 and 10
+            if (inputValue >= 1 && inputValue <= 10) {
+                document.getElementById("validationMessage").innerHTML = "Input is valid";
+            } else {
+                document.getElementById("validationMessage").innerHTML = "Input is not valid";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Validasi Input Angka</h1>
+    <label for="numberInput">Enter a number between 1 and 10:</label>
+    <input type="number" id="numberInput">
+    <button onclick="validateInput()">Validate</button>
+    <p id="validationMessage"></p>
+</body>
+</html>
